@@ -31,3 +31,7 @@ $(document).ready(function(){
         window.open('mailto:giovanigg08@gmail.com?subject=Contato WebSite de: ' + nome + '&body='+mensagem);
     });
 });
+
+$(document).ready(function(){
+    $('.sidenav').sidenav();
+});
