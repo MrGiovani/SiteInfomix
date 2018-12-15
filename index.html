@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Infomix</title>
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1">
+        <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <link rel = "stylesheet" type = "text/css" href = "Styles/style.css">
+        <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    </head>
+
+    <body>
+        <!-- Script -->
+        <script type = "text/javascript" src = "Scripts/script.js"></script>
+
+        <!-- NavBar -->
+        <div class="navbar-fixed" id="barra_principal_fixa">
+            <nav id="barra_principal">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a class="waves-effect waves-light btn-small btn red darken-3" href="http://138.117.147.29/central/login.php">Área do <b>Cliente</b></a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a class="scrollLink" href="#inicio">Início</a></li>
+                            <li><a class="scrollLink" href="#empresa">Nossa Empresa</a></li>
+                            <li><a class="scrollLink" href="#servicos">Serviços</a></li>
+                            <li><a class="scrollLink" href="#cidades">Cidades</a></li>
+                            <li><a class="scrollLink" href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Corpo -->
+        <div class="carousel carousel-slider center" id="inicio">
+            <div class="carousel-fixed-item center">
+                <img src="Images/logo-infomix.png">
+            </div>
+            <a class="carousel-item"><img src="Images/imagem-carrossel-1.jpg"></a>
+            <a class="carousel-item"><img src="Images/imagem-carrossel-2.jpg"></a>
+            <a class="carousel-item"><img src="Images/imagem-carrossel-3.jpg"></a>
+        </div>
+
+        <div id="empresa">
+            <div class="row">
+                <div class="col l4 offset-l4">
+                    <h2 class="center topDistance">NOSSA EMPRESA</h2>
+                </div>
+                <div class="col l4 offset-l4">
+                    <hr>
+                </div>
+                <div class="col l4 offset-l4" id="corpo_texto">
+                    <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="servicos">
+            <div class="row container">
+                <div class="col l12">
+                    <h2 class="center topDistance">SERVIÇOS DE INTERNET</h2>
+                </div>
+                <div class="col l4 offset-l4">
+                    <hr>
+                </div>
+                <div class="col l12" id="corpo_texto_servicos">
+                    <div class="col l4">
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="col l4">
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="col l4">
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+
+                <div class="col l12">
+                    <h2 class="center">PLANO DE INTERNET</h2>
+                </div>
+                <div class="col l4 offset-l4">
+                    <hr>
+                </div>
+                <div class="col l12" id="corpo_texto_servicos">
+                    <div class="col l4">
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="col l4">
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                    <div class="col l4">
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="cidades">
+            <div class="row">
+                <div class="col l12 red darken-4 white-text">
+                    <h2 class="center topDistance">—— CIDADES DE ATUAÇÃO ——</h2>
+                </div>
+            </div>
+            <div clas="col l12" id="imagem_cidades">
+            </div>
+        </div>
+
+        <div id="contato" class="red darken-4">
+            <div class="row container">
+                <div class="col l12 white-text">
+                    <div class="col l6">
+                        <div class="input-field">
+                            <input id="nome" type="text" class="validate white-text">
+                            <label for="nome">NOME</label>
+                        </div>
+
+                        <div class="input-field">
+                            <input id="email" type="email" class="validate white-text">
+                            <label for="email">E-MAIL</label>
+                        </div>
+
+                        <div class="input-field">
+                            <textarea id="mensagem" class="materialize-textarea white-text"></textarea>
+                            <label for="mensagem">MENSAGEM</label>
+                        </div>
+                        <a id="send" class="waves-effect waves-light red btn">ENVIAR</a>
+                        <br><br>
+                    </div>
+                    <div class="col l6 left-align">
+                        <br><b>CONTATO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
+                        <b>ENDEREÇO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
+                        <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="material-icons">library_books</i></a>
+                        <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="right" data-tooltip="Instagram"><i class="material-icons">camera_alt</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="mapa">
+            <iframe
+              height="548"
+              width="100%"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC4LH-lRmYPt16f1ANcvirvXp8tPDcwajw
+                &q=Bom+Retiro,Santa+Catarina" allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Footer -->
+        <footer class="page-footer">
+            <div class="footer-copyright red darken-4">
+                <div class="container">
+                    **Imagem InfoMix** © Todos os direitos reservados - 2018
+                    <a class="right">Produzido pela FIG Digital!</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
