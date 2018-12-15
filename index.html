@@ -19,7 +19,8 @@
             <nav id="barra_principal">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a class="waves-effect waves-light btn-small btn red darken-3" href="http://138.117.147.29/central/login.php">Área do <b>Cliente</b></a>
+                        <a class="waves-effect waves-light btn-small btn red darken-3 hide-on-med-and-down" href="http://138.117.147.29/central/login.php">Área do <b>Cliente</b></a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
                             <li><a class="scrollLink" href="#inicio">Início</a></li>
                             <li><a class="scrollLink" href="#empresa">Nossa Empresa</a></li>
@@ -32,25 +33,41 @@
             </nav>
         </div>
 
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="scrollLink" href="#inicio">Início</a></li>
+            <li><a class="scrollLink" href="#empresa">Nossa Empresa</a></li>
+            <li><a class="scrollLink" href="#servicos">Serviços</a></li>
+            <li><a class="scrollLink" href="#planos">Planos</a></li>
+            <li><a class="scrollLink" href="#cidades">Cidades</a></li>
+            <li><a class="scrollLink" href="#contato">Contato</a></li>
+        </ul>
+
         <!-- Corpo -->
-        <div class="carousel carousel-slider center" id="inicio">
-            <div class="carousel-fixed-item center">
-                <img src="Images/logo-infomix.png">
+        <div id="inicio">
+<!--            Desktop-->
+            <div class="carousel carousel-slider center hide-on-med-and-down">
+                <div class="carousel-fixed-item center">
+                    <img src="Images/logo-infomix.png">
+                </div>
+                <a class="carousel-item"><img src="Images/imagem-carrossel-1.jpg"></a>
+                <a class="carousel-item"><img src="Images/imagem-carrossel-2.jpg"></a>
+                <a class="carousel-item"><img src="Images/imagem-carrossel-3.jpg"></a>
             </div>
-            <a class="carousel-item"><img src="Images/imagem-carrossel-1.jpg"></a>
-            <a class="carousel-item"><img src="Images/imagem-carrossel-2.jpg"></a>
-            <a class="carousel-item"><img src="Images/imagem-carrossel-3.jpg"></a>
+<!--            Mobile-->
+            <div id="inicio" class="center hide-on-large-only">
+                <a class="waves-effect waves-light btn-small btn red darken-3" id="button_inicio">Área do <b>Cliente</b></a>
+            </div>
         </div>
 
         <div id="empresa">
-            <div class="row">
-                <div class="col l4 offset-l4">
+            <div class="row container">
+                <div class="col s12 l4 offset-l4">
                     <h2 class="center topDistance">NOSSA EMPRESA</h2>
                 </div>
-                <div class="col l4 offset-l4">
+                <div class="col s12 l4 offset-l4">
                     <hr>
                 </div>
-                <div class="col l4 offset-l4" id="corpo_texto">
+                <div class="col s12 l4 offset-l4" id="corpo_texto">
                     <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
@@ -64,42 +81,82 @@
                 <div class="col l12">
                     <h2 class="center topDistance">SERVIÇOS DE INTERNET</h2>
                 </div>
-                <div class="col l4 offset-l4">
+                <div class="col s12 l4 offset-l4 hide-on-med-and-down">
                     <hr>
                 </div>
                 <div class="col l12" id="corpo_texto_servicos">
-                    <div class="col l4">
-                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="col l4">
-                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                    <div class="col l4">
-                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="col s12 l4">
+                        <i class="material-icons hide-on-large-only">wifi</i>
+                        <h5>Fibra Óptica</h5>
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
+                        <hr class="hide-on-large-only espacador">
+                        </div>
+                        <div class="col s12 l4">
+                        <i class="material-icons hide-on-large-only">wifi</i>
+                        <h5>Via Rádio</h5>
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
+                        <hr class="hide-on-large-only espacador">
+                        </div>
+                        <div class="col s12 l4">
+                        <i class="material-icons hide-on-large-only">wifi</i>
+                        <h5>Banda Larga</h5>
+                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
 
-                <div class="col l12">
-                    <h2 class="center">PLANO DE INTERNET</h2>
-                </div>
-                <div class="col l4 offset-l4">
-                    <hr>
-                </div>
-                <div class="col l12" id="corpo_texto_servicos">
-                    <div class="col l4">
-                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <div class="hide-on-med-and-down">
+                    <div class="col l12">
+                        <h2 class="center topDistance">PLANOS DE INTERNET</h2>
                     </div>
-                    <div class="col l4">
-                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="col l4 offset-l4">
+                        <hr>
                     </div>
-                    <div class="col l4">
-                        <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <div class="col l12" id="corpo_texto_servicos">
+                        <div class="col l4">
+                            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="col l4">
+                            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            </div>
+                            <div class="col l4">
+                            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="planos" class="hide-on-large-only">
+            <div class="row container">
+                <div>
+                    <div class="col s12">
+                        <h2 class="center topDistance">PLANOS DE INTERNET</h2>
+                    </div>
+                    <div class="col s12" id="corpo_texto_servicos">
+                        <div class="col s12">
+                            <h5>Fibra Óptica</h5>
+                            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="col s6 offset-s3 priceWrapper">
+                                <span>R$ </span><span class="price">69,90</span><span> / mês</span>
+                            </div>
+                            </div>
+                            <div class="col l4">
+                            <h5>Via Rádio</h5>
+                            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="col s6 offset-s3 priceWrapper">
+                                <span>R$ </span><span class="price">69,90</span><span> / mês</span>
+                            </div>
+                            </div>
+                            <div class="col l4">
+                            <h5>Banda Larga</h5>
+                            <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
+                            <div class="col s6 offset-s3 priceWrapper">
+                                <span>R$ </span><span class="price">69,90</span><span> / mês</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -107,7 +164,7 @@
 
         <div id="cidades">
             <div class="row">
-                <div class="col l12 red darken-4 white-text">
+                <div class="col l12 red darken-4 white-text" style="padding-bottom: 100px">
                     <h2 class="center topDistance">—— CIDADES DE ATUAÇÃO ——</h2>
                 </div>
             </div>
@@ -148,7 +205,7 @@
 
         <div id="mapa">
             <iframe
-              height="548"
+              height="442"
               width="100%"
               frameborder="0" style="border:0"
               src="https://www.google.com/maps/embed/v1/place?key=AIzaSyC4LH-lRmYPt16f1ANcvirvXp8tPDcwajw
