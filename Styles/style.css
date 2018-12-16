@@ -65,9 +65,18 @@ div#imagem_cidades {
     margin-top: -20px;
 }
 
-div#contato {
-    padding-top: 90px;
-    padding-bottom: 75px;
+@media only screen and (max-width: 992px) {
+    div#contato {
+        padding-top: 10vh;
+        padding-bottom: 8vh;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    div#contato {
+        padding-top: 90px;
+        padding-bottom: 75px;
+    }
 }
 
 div#mapa {
@@ -138,6 +147,12 @@ div#mapa {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 992px) {
+    .footerMobile {
+        font-size: 0.6em;
+    }
+}
+
 /* label color */
 .input-field label {
  color: #FFFFFF !important;
@@ -175,10 +190,6 @@ div#mapa {
 
 footer {
     padding-top: 0px !important;
-}
-
-.footer-copyright {
-    color: white;
 }
 
 .footer-copyright a {

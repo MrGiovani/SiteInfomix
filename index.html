@@ -62,10 +62,11 @@
         <div id="empresa">
             <div class="row container">
                 <div class="col s12 l4 offset-l4">
-                    <h2 class="center topDistance">NOSSA EMPRESA</h2>
+                    <h2 class="center topDistance hide-on-med-and-down">NOSSA EMPRESA</h2>
+                    <h5 class="center topDistance hide-on-large-only">NOSSA <b>EMPRESA</b></h5>
                 </div>
                 <div class="col s12 l4 offset-l4">
-                    <hr>
+                    <hr class="espacador">
                 </div>
                 <div class="col s12 l4 offset-l4" id="corpo_texto">
                     <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -78,8 +79,9 @@
 
         <div id="servicos">
             <div class="row container">
-                <div class="col l12">
-                    <h2 class="center topDistance">SERVIÇOS DE INTERNET</h2>
+                <div class="col s12">
+                    <h2 class="center topDistance hide-on-med-and-down">SERVIÇOS DE INTERNET</h2>
+                    <h5 class="center topDistance hide-on-large-only">SERVIÇOS DE <b>INTERNET</b></h5>
                 </div>
                 <div class="col s12 l4 offset-l4 hide-on-med-and-down">
                     <hr>
@@ -87,19 +89,19 @@
                 <div class="col l12" id="corpo_texto_servicos">
                     <div class="col s12 l4">
                         <i class="material-icons hide-on-large-only">wifi</i>
-                        <h5>Fibra Óptica</h5>
+                        <h5><b>Fibra Óptica</b></h5>
                         <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
                         <hr class="hide-on-large-only espacador">
                         </div>
                         <div class="col s12 l4">
                         <i class="material-icons hide-on-large-only">wifi</i>
-                        <h5>Via Rádio</h5>
+                        <h5><b>Via Rádio</b></h5>
                         <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
                         <hr class="hide-on-large-only espacador">
                         </div>
                         <div class="col s12 l4">
                         <i class="material-icons hide-on-large-only">wifi</i>
-                        <h5>Banda Larga</h5>
+                        <h5><b>Banda Larga</b></h5>
                         <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
                     </div>
                 </div>
@@ -133,25 +135,25 @@
             <div class="row container">
                 <div>
                     <div class="col s12">
-                        <h2 class="center topDistance">PLANOS DE INTERNET</h2>
+                        <h5 class="center topDistance hide-on-large-only">PLANOS DE <b>INTERNET</b></h5>
                     </div>
                     <div class="col s12" id="corpo_texto_servicos">
                         <div class="col s12">
-                            <h5>Fibra Óptica</h5>
+                            <h5><b>Fibra Óptica</b></h5>
                             <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
                             <div class="col s6 offset-s3 priceWrapper">
                                 <span>R$ </span><span class="price">69,90</span><span> / mês</span>
                             </div>
                             </div>
                             <div class="col l4">
-                            <h5>Via Rádio</h5>
+                            <h5><b>Via Rádio</b></h5>
                             <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
                             <div class="col s6 offset-s3 priceWrapper">
                                 <span>R$ </span><span class="price">69,90</span><span> / mês</span>
                             </div>
                             </div>
                             <div class="col l4">
-                            <h5>Banda Larga</h5>
+                            <h5><b>Banda Larga</b></h5>
                             <p><b>Lorem Ipsum</b> is simply dummy text of the printing and typesetting industry.</p>
                             <div class="col s6 offset-s3 priceWrapper">
                                 <span>R$ </span><span class="price">69,90</span><span> / mês</span>
@@ -164,40 +166,70 @@
 
         <div id="cidades">
             <div class="row">
-                <div class="col l12 red darken-4 white-text" style="padding-bottom: 100px">
-                    <h2 class="center topDistance">—— CIDADES DE ATUAÇÃO ——</h2>
+                <div class="col s12 red darken-4 white-text" style="padding-bottom: 10vh">
+                    <h2 class="center topDistance hide-on-med-and-down">—— CIDADES DE ATUAÇÃO ——</h2>
+                    <h5 class="center topDistance hide-on-large-only">—— CIDADES DE ATUAÇÃO ——</h5>
                 </div>
             </div>
-            <div clas="col l12" id="imagem_cidades">
+            <div clas="col s12" id="imagem_cidades">
             </div>
         </div>
 
         <div id="contato" class="red darken-4">
             <div class="row container">
                 <div class="col l12 white-text">
-                    <div class="col l6">
-                        <div class="input-field">
-                            <input id="nome" type="text" class="validate white-text">
-                            <label for="nome">NOME</label>
+                    <div class="hide-on-large-only center">
+                        <div class="col s12">
+                            <br><b>CONTATO</b><p class="nullTopMargin">(XX) XXXXX.XXXX</p>
+                            <b>ENDEREÇO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text</p>
+                            <a class="btn-floating btn-small waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="material-icons">library_books</i></a> /infomix
+                            <br>
+                            <a class="btn-floating btn-small waves-effect waves-light red tooltipped" data-position="right" data-tooltip="Instagram"><i class="material-icons">camera_alt</i></a> @infomix
                         </div>
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input id="nome" type="text" class="validate white-text">
+                                <label for="nome">NOME</label>
+                            </div>
 
-                        <div class="input-field">
-                            <input id="email" type="email" class="validate white-text">
-                            <label for="email">E-MAIL</label>
-                        </div>
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate white-text">
+                                <label for="email">E-MAIL</label>
+                            </div>
 
-                        <div class="input-field">
-                            <textarea id="mensagem" class="materialize-textarea white-text"></textarea>
-                            <label for="mensagem">MENSAGEM</label>
+                            <div class="input-field">
+                                <textarea id="mensagem" class="materialize-textarea white-text"></textarea>
+                                <label for="mensagem">MENSAGEM</label>
+                            </div>
+                            <a id="send" class="waves-effect waves-light red btn">ENVIAR</a>
+                            <br><br>
                         </div>
-                        <a id="send" class="waves-effect waves-light red btn">ENVIAR</a>
-                        <br><br>
                     </div>
-                    <div class="col l6 left-align">
-                        <br><b>CONTATO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
-                        <b>ENDEREÇO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
-                        <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="material-icons">library_books</i></a>
-                        <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="right" data-tooltip="Instagram"><i class="material-icons">camera_alt</i></a>
+                    <div class="hide-on-med-and-down">
+                        <div class="col s12 l6">
+                            <div class="input-field">
+                                <input id="nome" type="text" class="validate white-text">
+                                <label for="nome">NOME</label>
+                            </div>
+
+                            <div class="input-field">
+                                <input id="email" type="email" class="validate white-text">
+                                <label for="email">E-MAIL</label>
+                            </div>
+
+                            <div class="input-field">
+                                <textarea id="mensagem" class="materialize-textarea white-text"></textarea>
+                                <label for="mensagem">MENSAGEM</label>
+                            </div>
+                            <a id="send" class="waves-effect waves-light red btn">ENVIAR</a>
+                            <br><br>
+                        </div>
+                        <div class="col l6 left-align">
+                            <br><b>CONTATO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
+                            <b>ENDEREÇO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
+                            <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="material-icons">library_books</i></a>
+                            <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="right" data-tooltip="Instagram"><i class="material-icons">camera_alt</i></a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -216,7 +248,7 @@
         <!-- Footer -->
         <footer class="page-footer">
             <div class="footer-copyright red darken-4">
-                <div class="container">
+                <div class="container footerMobile">
                     **Imagem InfoMix** © Todos os direitos reservados - 2018
                     <a class="right">Produzido pela FIG Digital!</a>
                 </div>
