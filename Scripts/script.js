@@ -3,9 +3,9 @@ $(document).ready(function(){
 });
 
 $('.carousel.carousel-slider').carousel({
-      fullWidth: true,
-      indicators: true
-   });
+    fullWidth: true,
+    indicators: true
+});
 
 autoplay();
 function autoplay() {
