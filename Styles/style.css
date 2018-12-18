@@ -21,7 +21,7 @@ div#barra_principal_fixa {
 }
 
 .carousel-fixed-item {
-    bottom: 300px !important;
+    bottom: 35vh !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -29,11 +29,38 @@ div#barra_principal_fixa {
         height: 100vh;
         width: 100%;
         background-image: url("../Images/imagem-carrossel-1.jpg");
+        background-position: 70% 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
-a#button_inicio {
-    top: 75vh;
+@media only screen and (max-width: 600px) {
+    .logo {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .logo {
+        width: 90%;
+        height: auto;
+        position: relative;
+        bottom: 10vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    a#button_inicio {
+        top: 30vh;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    a#button_inicio {
+        top: 10vh;
+    }
 }
 
 div#empresa {
@@ -41,6 +68,9 @@ div#empresa {
     width: 100%;
     background-image: url("../Images/imagem-empresa.jpg");
     color: white;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div#servicos {
@@ -48,13 +78,19 @@ div#servicos {
     width: 100%;
     background-image: url("../Images/imagem-servicos.jpg");
     color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div#planos {
-    height: 1000px;
+    height: 120vh;
     width: 100%;
     background-image: url("../Images/imagem-planos.jpg");
     color: red;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div#imagem_cidades {
@@ -63,6 +99,9 @@ div#imagem_cidades {
     background-image: url("../Images/imagem-cidades.jpg");
     color: white;
     margin-top: -20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 @media only screen and (max-width: 992px) {
@@ -108,10 +147,16 @@ div#mapa {
     }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 993px) and  (max-width: 1700px) {
     div#corpo_texto {
         text-align: justify;
-        margin-top: 100px;
+    }
+}
+
+@media only screen and (min-width: 1701px) {
+    div#corpo_texto {
+        text-align: justify;
+        margin-top: 10vh;
     }
 }
 
@@ -122,7 +167,13 @@ div#mapa {
     }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 993px) and  (max-width: 1700px) {
+    div#corpo_texto_servicos {
+        text-align: justify;
+    }
+}
+
+@media only screen and (min-width: 1701px) {
     div#corpo_texto_servicos {
         text-align: justify;
         margin-top: 50px;
@@ -147,10 +198,14 @@ div#mapa {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 992px) {
-    .footerMobile {
+@media only screen and (max-width: 600px) {
+    .footer {
         font-size: 0.6em;
     }
+}
+
+.footer {
+    line-height: 57px;
 }
 
 /* label color */
@@ -192,6 +247,57 @@ footer {
     padding-top: 0px !important;
 }
 
+.footer-copyright {
+    padding: 0px !important;
+}
+
 .footer-copyright a {
     color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    .logoFooter {
+        vertical-align: -7%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .logoFooter {
+        vertical-align: -11%;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .logoFooter {
+        vertical-align: -10%;
+    }
+}
+
+.logoFooter {
+    height: 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .logoFig {
+        position: relative;
+        top: 2vh;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .logoFig {
+        position: relative;
+        top: 1vh;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .logoFig {
+        position: relative;
+        top: 1vh;
+    }
+}
+
+.logoFig {
+    height: 4vh;
 }
