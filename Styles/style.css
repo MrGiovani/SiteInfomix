@@ -26,7 +26,7 @@ div#barra_principal_fixa {
 
 @media only screen and (max-width: 992px) {
     div#inicio {
-        height: 100vh;
+        height: 800px;
         width: 100%;
         background-image: url("../Images/imagem-carrossel-1.jpg");
         background-position: 70% 50%;
@@ -74,7 +74,7 @@ div#empresa {
 }
 
 div#servicos {
-    height: 100vh;
+    height: 800px;
     width: 100%;
     background-image: url("../Images/imagem-servicos.jpg");
     color: white;
@@ -84,7 +84,7 @@ div#servicos {
 }
 
 div#planos {
-    height: 120vh;
+    height: 800px;
     width: 100%;
     background-image: url("../Images/imagem-planos.jpg");
     color: red;
