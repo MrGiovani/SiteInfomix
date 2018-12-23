@@ -19,7 +19,7 @@
             <nav id="barra_principal">
                 <div class="container">
                     <div class="nav-wrapper">
-                        <a class="waves-effect waves-light btn-small btn red darken-3 hide-on-med-and-down" href="http://138.117.147.29/central/login.php">Área do <b>Cliente</b></a>
+                        <a class="waves-effect waves-light btn-small btn hoverable hide-on-med-and-down buttonCliente" href="http://138.117.147.29/central/login.php">Área do <b>Cliente</b></a>
                         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                         <ul id="nav-mobile" class="right hide-on-med-and-down">
                             <li><a class="scrollLink" href="#inicio">Início</a></li>
@@ -45,18 +45,30 @@
         <!-- Corpo -->
         <div id="inicio_outside">
 <!--            Desktop-->
-            <div class="carousel carousel-slider center hide-on-med-and-down">
-                <div class="carousel-fixed-item center">
-                    <img src="Images/logo-infomix.png">
+            <div style="height: 100vh;" class="hide-on-med-and-down">
+                <div class="slider fullscreen">
+                    <ul class="slides">
+                        <li>
+                            <img src="Images/imagem-carrossel-1.jpg">
+                        </li>
+                        <li>
+                            <img src="Images/imagem-carrossel-2.jpg">
+                        </li>
+                        <li>
+                            <img src="Images/imagem-carrossel-3.jpg">
+                        </li>
+                    </ul>
                 </div>
-                <a class="carousel-item"><img src="Images/imagem-carrossel-1.jpg"></a>
-                <a class="carousel-item"><img src="Images/imagem-carrossel-2.jpg"></a>
-                <a class="carousel-item"><img src="Images/imagem-carrossel-3.jpg"></a>
+                <div class="logo-wrapper">
+                    <div class="row center">
+                        <img src="Images/logo-infomix.png" class="logo">
+                    </div>
+                </div>
             </div>
 <!--            Mobile-->
             <div id="inicio" class="center hide-on-large-only">
                 <img src="Images/logo-infomix.png" class="logo">
-                <a class="waves-effect waves-light btn-small btn red darken-3" id="button_inicio">Área do <b>Cliente</b></a>
+                <a class="waves-effect waves-light btn-small btn red darken-3" id="button_inicio"  href="http://138.117.147.29/central/login.php">Área do <b>Cliente</b></a>
             </div>
         </div>
 

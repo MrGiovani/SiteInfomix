@@ -1,17 +1,6 @@
 $(document).ready(function(){
-    $('.carousel').carousel();
+    $('.slider').slider();
 });
-
-$('.carousel.carousel-slider').carousel({
-    fullWidth: true,
-    indicators: true
-});
-
-autoplay();
-function autoplay() {
-    $('.carousel').carousel('next');
-    setTimeout(autoplay, 4500);
-}
 
 $(document).ready(function () {
     $("a.scrollLink").click(function (event) {
