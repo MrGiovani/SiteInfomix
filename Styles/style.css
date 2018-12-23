@@ -16,12 +16,35 @@ div#barra_principal_fixa {
     height: 0px;
 }
 
-.carousel {
-    height: 100vh !important;
+.buttonCliente {
+    background-color: #C62828 !important;
 }
 
-.carousel-fixed-item {
-    bottom: 35vh !important;
+.buttonCliente:hover {
+    background-color: #e53935 !important;
+}
+
+.logo-wrapper {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 997;
+    pointer-events: none;
+    width: 100%;
+}
+
+@media only screen and (max-height: 650px) {
+    .logo-wrapper {
+        bottom: 12vh;
+    }
+}
+
+@media only screen and (min-height: 650px) {
+    .logo-wrapper {
+        bottom: 35vh;
+    }
 }
 
 @media only screen and (max-width: 992px) {
@@ -42,12 +65,20 @@ div#barra_principal_fixa {
     }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 601px) and  (max-width: 992px) {
     .logo {
         width: 90%;
         height: auto;
         position: relative;
-        bottom: 10vh;
+        bottom: 20vh;
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .logo {
+        width: 90%;
+        height: auto;
+        z-index: 999;
     }
 }
 
@@ -57,7 +88,7 @@ div#barra_principal_fixa {
     }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 993px) {
     a#button_inicio {
         top: 10vh;
     }
