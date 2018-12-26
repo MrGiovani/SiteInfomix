@@ -24,6 +24,14 @@ div#barra_principal_fixa {
     background-color: #e53935 !important;
 }
 
+.slider .indicators .indicator-item.active {
+    background-color: #c62828 !important;
+}
+
+.row {
+    margin-bottom: 0px !important;
+}
+
 .logo-wrapper {
     position: absolute;
     display: flex;
@@ -49,7 +57,7 @@ div#barra_principal_fixa {
 
 @media only screen and (max-width: 992px) {
     div#inicio {
-        height: 800px;
+        min-height: 100vh;
         width: 100%;
         background-image: url("../Images/imagem-carrossel-1.jpg");
         background-position: 70% 50%;
@@ -95,7 +103,7 @@ div#barra_principal_fixa {
 }
 
 div#empresa {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background-image: url("../Images/imagem-empresa.jpg");
     color: white;
@@ -105,17 +113,17 @@ div#empresa {
 }
 
 div#servicos {
-    height: 800px;
+    min-height: 100vh;
     width: 100%;
     background-image: url("../Images/imagem-servicos.jpg");
-    color: white;
+    color: #243037;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 div#planos {
-    height: 800px;
+    min-height: 100vh;
     width: 100%;
     background-image: url("../Images/imagem-planos.jpg");
     color: red;
@@ -209,6 +217,11 @@ div#mapa {
         text-align: justify;
         margin-top: 50px;
     }
+}
+
+.textoEspacado {
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .espacador {
