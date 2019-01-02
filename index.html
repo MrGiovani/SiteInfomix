@@ -8,6 +8,7 @@
         <link rel = "stylesheet" type = "text/css" href = "Styles/style.css">
         <link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
         <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     </head>
 
     <body>
@@ -186,12 +187,13 @@
 
         <div id="cidades">
             <div class="row">
-                <div class="col s12 red darken-4 white-text" style="padding-bottom: 10vh">
-                    <h2 class="center topDistance hide-on-med-and-down">—— CIDADES DE ATUAÇÃO ——</h2>
-                    <h5 class="center topDistance hide-on-large-only">—— CIDADES DE ATUAÇÃO ——</h5>
+                <div class="col s12 red darken-4 white-text">
+                    <h2 class="center topDistance bottomDistance hide-on-med-and-down">—— CIDADES DE ATUAÇÃO ——</h2>
+                    <h5 class="center topDistance bottomDistance headerCidadesMobile hide-on-large-only">—— CIDADES DE ATUAÇÃO ——</h5>
                 </div>
             </div>
             <div clas="col s12" id="imagem_cidades">
+                <img src="Images/imagem-cidades.jpg" class="imagemCidades">
             </div>
         </div>
 
@@ -200,11 +202,11 @@
                 <div class="col s12 l12 white-text">
                     <div class="hide-on-large-only center">
                         <div class="col s12">
-                            <br><b>CONTATO</b><p class="nullTopMargin">(XX) XXXXX.XXXX</p>
-                            <b>ENDEREÇO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text</p>
-                            <a class="btn-floating btn-small waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="material-icons">library_books</i></a> /infomix
+                            <br><b>CONTATO</b><p class="nullTopMargin">(49) 3277-1333</p>
+                            <b>ENDEREÇO</b><p class="nullTopMargin">Rua Frontino Vieira de Souza, 181, Centro, Bom Retiro</p>
+                            <a href="https://www.facebook.com/infomixonline/"><img src="Images/fb.png" class="socialImg"></a> /infomix
                             <br>
-                            <a class="btn-floating btn-small waves-effect waves-light red tooltipped" data-position="right" data-tooltip="Instagram"><i class="material-icons">camera_alt</i></a> @infomix
+                            <a href="https://www.instagram.com/infomixinternet/"><img src="Images/insta.png" class="socialImg"></a> @infomix
                         </div>
                         <div class="col s12 l6">
                             <div class="input-field">
@@ -241,14 +243,14 @@
                                 <textarea id="mensagem" class="materialize-textarea white-text"></textarea>
                                 <label for="mensagem">MENSAGEM</label>
                             </div>
-                            <a id="send" class="waves-effect waves-light red btn">ENVIAR</a>
+                            <a id="send" class="waves-effect waves-light btn hoverable buttonEnviar">ENVIAR</a>
                             <br><br>
                         </div>
                         <div class="col l6 left-align">
-                            <br><b>CONTATO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
-                            <b>ENDEREÇO</b><p class="nullTopMargin">Lorem Ipsum is simply dummy text of the printin</p>
-                            <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="bottom" data-tooltip="Facebook"><i class="material-icons">library_books</i></a>
-                            <a class="btn-floating btn-large waves-effect waves-light red tooltipped" data-position="right" data-tooltip="Instagram"><i class="material-icons">camera_alt</i></a>
+                            <br><b>CONTATO</b><p class="nullTopMargin">(49) 3277-1333</p>
+                            <b>ENDEREÇO</b><p class="nullTopMargin">Rua Frontino Vieira de Souza, 181, Centro, Bom Retiro</p>
+                            <a href="https://www.facebook.com/infomixonline/" class="tooltipped socialLink" data-position="bottom" data-tooltip="Facebook"><img src="Images/fb.png" class="socialImg"></a>
+                            <a href="https://www.instagram.com/infomixinternet/" class="tooltipped socialLink" data-position="right" data-tooltip="Instagram"><img src="Images/insta.png" class="socialImg"></a>
                         </div>
                     </div>
                 </div>
@@ -270,7 +272,7 @@
             <div class="footer-copyright red darken-4">
                 <div class="container footer">
                     <img src="Images/logo%20infomix.png" class="logoFooter"> <a>© Todos os direitos reservados - 2018</a>
-                    <img class="right logoFig" src="Images/WhatsApp%20Image%202018-12-24%20at%2017.20.35.png">
+                    <a href="https://figdigital.com.br/"><img href="https://figdigital.com.br/" class="right logoFig" src="Images/prod.png" ></a>
                 </div>
             </div>
         </footer>
