@@ -82,6 +82,8 @@ div#barra_principal_fixa {
     .logo {
         width: 90%;
         height: auto;
+        position: relative;
+        top: 30vh;
     }
 }
 
@@ -90,7 +92,7 @@ div#barra_principal_fixa {
         width: 90%;
         height: auto;
         position: relative;
-        bottom: 20vh;
+        top: 25vh;
     }
 }
 
@@ -104,20 +106,26 @@ div#barra_principal_fixa {
 
 @media only screen and (max-width: 600px) {
     a#button_inicio {
-        top: 30vh;
+        position: absolute;
+        top: 80vh;
+        left: 50%;
+        margin-left: -80.5px;
     }
 }
 
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 601px) {
     a#button_inicio {
-        top: 10vh;
+        position: absolute;
+        top: 80vh;
+        left: 50%;
+        margin-left: -80.5px;
     }
 }
 
 div#empresa {
     min-height: 100vh;
     width: 100%;
-    background-image: url("../Images/imagem-empresa.jpg");
+    background-image: url("../Images/imagem-fundo-empresa.jpg");
     color: white;
     background-position: right;
     background-repeat: no-repeat;
@@ -146,9 +154,9 @@ div#planos {
 
 div#imagem_cidades {
     max-height: auto;
-    background-image: url("../Images/imagem-cidades.jpg");
     color: white;
     margin-top: -20px;
+    background-color: #b71c1c;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -159,16 +167,8 @@ div#imagem_cidades {
     max-height: 650px;
 }
 
-@media only screen and (max-height: 650px) {
-    .headerCidadesMobile {
-        font-size: 1.4em !important;
-    }
-}
-
-@media only screen and (min-height: 650px) {
-    .headerCidadesMobile {
-        font-size: 2em !important;
-    }
+.headerCidadesMobile {
+    font-size: 4vw !important;
 }
 
 @media only screen and (max-width: 992px) {
@@ -269,6 +269,51 @@ div#mapa {
 .espacador {
     margin-top: 3vh;
     margin-bottom: 3vh;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(36, 48, 55, 0), rgba(36, 48, 55, 1), rgba(36, 48, 55, 0));
+}
+
+.borda {
+    display: inline;
+    padding: 12px;
+    margin: 20px;
+    border: 2px solid;
+    border-radius: 12px;
+}
+
+.opcoesPlanos {
+    position: relative;
+    z-index: 1;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 500px;
+}
+
+.opcoesPlanos .bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url(../Images/moldura-branca.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .5;
+}
+
+.opcoesPlanos .velocidadesPlanos {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.textoPlanos {
+    margin-bottom: 5px;
+    margin-top: 5px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -361,23 +406,24 @@ footer {
 
 @media only screen and (max-width: 600px) {
     .logoFooter {
-        vertical-align: -6px;
         height: 24px;
     }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
     .logoFooter {
-        vertical-align: -5px;
         height: 30px;
     }
 }
 
 @media only screen and (min-width: 993px) {
     .logoFooter {
-        vertical-align: -4px;
         height: 28px;
     }
+}
+
+.logoFooter {
+    vertical-align: middle;
 }
 
 @media only screen and (max-width: 600px) {
