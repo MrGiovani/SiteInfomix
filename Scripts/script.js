@@ -13,13 +13,13 @@ $(document).ready(function(){
     $('.tooltipped').tooltip();
 });
 
-$(document).ready(function(){
+/*$(document).ready(function(){
     $('#send').click(function() {
         var mensagem = document.getElementById('mensagem').value;
         var nome = document.getElementById('nome').value;
         window.open('mailto:giovanigg08@gmail.com?subject=Contato WebSite de: ' + nome + '&body='+mensagem);
     });
-});
+});*/
 
 $(document).ready(function(){
     $('.sidenav').sidenav().on('click tap', 'li a', () => {

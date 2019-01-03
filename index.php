@@ -1,3 +1,8 @@
+<?php
+if(isset($_GET['enviado'])){
+    echo "<script>alert('Email enviado com Sucesso!');</script>";
+}
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -228,41 +233,45 @@
                             <a href="https://www.instagram.com/infomixinternet/"><img src="Images/insta.png" class="socialImg"></a> @infomix
                         </div>
                         <div class="col s12 l6">
-                            <div class="input-field">
-                                <input id="nome" type="text" class="validate white-text">
-                                <label for="nome">NOME</label>
-                            </div>
+                            <form action="email.php" method="post">
+                                <div class="input-field">
+                                    <input id="nome" name="nome" type="text" class="validate white-text">
+                                    <label for="nome">NOME</label>
+                                </div>
 
-                            <div class="input-field">
-                                <input id="email" type="email" class="validate white-text">
-                                <label for="email">E-MAIL</label>
-                            </div>
+                                <div class="input-field">
+                                    <input id="email" name="email" type="email" class="validate white-text">
+                                    <label for="email">E-MAIL</label>
+                                </div>
 
-                            <div class="input-field">
-                                <textarea id="mensagem" class="materialize-textarea white-text"></textarea>
-                                <label for="mensagem">MENSAGEM</label>
-                            </div>
-                            <a id="send" class="waves-effect waves-light red btn">ENVIAR</a>
+                                <div class="input-field">
+                                    <textarea id="mensagem" name="mensagem" class="materialize-textarea white-text"></textarea>
+                                    <label for="mensagem">MENSAGEM</label>
+                                </div>
+                                <button type="submit" id="send" class="btn waves-effect waves-light red">ENVIAR</button>
+                            </form>
                             <br><br>
                         </div>
                     </div>
                     <div class="hide-on-med-and-down">
                         <div class="col s12 l6">
-                            <div class="input-field">
-                                <input id="nome" type="text" class="validate white-text">
-                                <label for="nome">NOME</label>
-                            </div>
+                            <form action="email.php" method="post">
+                                <div class="input-field">
+                                    <input id="nome" name="nome" type="text" class="validate white-text">
+                                    <label for="nome">NOME</label>
+                                </div>
 
-                            <div class="input-field">
-                                <input id="email" type="email" class="validate white-text">
-                                <label for="email">E-MAIL</label>
-                            </div>
+                                <div class="input-field">
+                                    <input id="email" name="email" type="email" class="validate white-text">
+                                    <label for="email">E-MAIL</label>
+                                </div>
 
-                            <div class="input-field">
-                                <textarea id="mensagem" class="materialize-textarea white-text"></textarea>
-                                <label for="mensagem">MENSAGEM</label>
-                            </div>
-                            <a id="send" class="waves-effect waves-light btn hoverable buttonEnviar">ENVIAR</a>
+                                <div class="input-field">
+                                    <textarea id="mensagem" name="mensagem" class="materialize-textarea white-text"></textarea>
+                                    <label for="mensagem">MENSAGEM</label>
+                                </div>
+                                <button type="submit" id="send" class="btn waves-effect waves-light red">ENVIAR</button>
+                            </form>
                             <br><br>
                         </div>
                         <div class="col l6 left-align">
